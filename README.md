@@ -67,3 +67,5 @@ Avec la propriété **display** CSS défini sur **hiden**, quelque chose de trè
 Avec une **hidden visibility**, l'élément occupera toujours un espace vide sur la page, même si l'élément est masqué. Ceci est différent de l'utilisation de **display:none**, où aucun espace sur la page n'est occupé.
 
 Mais dans les deux cas, avec **CSS**, les éléments sont toujours présents dans le **DOM**, consommant des ressources aussi petites soient-elles, contrairement à <code>ngIf</code> où les éléments cachés n'existent tout simplement pas.
+
+>En général, lors de la création d'applications angulaires, nous devrions toujours préférer masquer les éléments à l'aide de <code>ngIf</code> au lieu d'utiliser du **CSS** simple.
