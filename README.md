@@ -39,4 +39,5 @@ Dans cet exemple, le container div ne sera affiché que si la variable nom est d
 Dans le cas des éléments **container**, s'il n'y a pas de **container** disponible pour la section que nous voulons afficher ou masquer, nous n'avons pas besoin de créer un **container div** juste pour pouvoir appliquer <code>ngIf</code>.
 
 Au lieu de cela, nous pouvons appliquer <code>ngIf</code> au-dessus de la directive <code>ng-container</code>. Cela affichera ou masquera le contenu de <code>ng-container</code>, sans avoir à créer un **div** supplémentaire juste pour cela :
+![ng-container](images/ng-container.png)
 
