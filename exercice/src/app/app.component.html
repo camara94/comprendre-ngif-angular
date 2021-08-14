@@ -1,18 +1,16 @@
 <ng-container>
   <div class="row">
     <div class="col-12">
-        <ng-container *ngIf="{nom: 'CAMARA'}">
-          .... this content will be visible because the expression is truthy ...
-        </ng-container><br/>
-        <ng-container *ngIf="{}">
-          .... this content will be visible because the expression is truthy ...
-        </ng-container> <br />
-        <ng-container *ngIf="[1,2,3]">
-          .... this content will be visible because the expression is truthy ...
-        </ng-container> <br/>
-        <ng-container *ngIf="[]">
-          .... this content will be visible because the expression is truthy ...
+      <ng-container *ngIf="courses.length != 62; then coursesList; else noCourses">
+          Nous avons {{courses.length}} cours dans notre base de données
         </ng-container>
+        <ng-template #coursesList>
+          <h1>All courses available</h1>
+          ....{{coursesList|json}}
+        </ng-template>
+        <ng-template #noCourses>
+          All courses available
+        </ng-template>
     </div>
   </div>
 </ng-container>
