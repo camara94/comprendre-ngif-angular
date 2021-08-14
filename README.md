@@ -82,3 +82,4 @@ Et voici d'autres exemples de transmission de tableaux et d'objets à ngIf :
 Si nous pouvions utiliser une syntaxe **if** en HTML, nous aurons également besoin d'une clause **else**, tout comme en Javascript, nous avons l'instruction **if-else**.
 
 Dans Angular, nous pouvons utiliser la syntaxe **ngIf else**, de la manière suivante :
+![ifelse](images/ngifelse.png)
