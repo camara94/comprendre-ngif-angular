@@ -69,3 +69,10 @@ Avec une **hidden visibility**, l'élément occupera toujours un espace vide sur
 Mais dans les deux cas, avec **CSS**, les éléments sont toujours présents dans le **DOM**, consommant des ressources aussi petites soient-elles, contrairement à <code>ngIf</code> où les éléments cachés n'existent tout simplement pas.
 
 >En général, lors de la création d'applications angulaires, nous devrions toujours préférer masquer les éléments à l'aide de <code>ngIf</code> au lieu d'utiliser du **CSS** simple.
+
+## Quel type d'expressions ngIf peut-il accepter ?
+La directive <code>ngIf</code> peut prendre en entrée n'importe quelle expression Typescript valide et pas seulement un booléen. La véracité de l'expression va ensuite être évaluée, pour déterminer si l'élément doit être affiché ou non.
+
+Outre les booléens, nous pouvons également transmettre à ngIf par exemple des chaînes, des tableaux, des objets, etc. Voici quelques exemples de ce qui se passerait si nous passions d'autres types primitifs à <code>ngIf</code> :
+![expression](images/expressions.png)
+Et voici d'autres exemples de transmission de tableaux et d'objets à ngIf :

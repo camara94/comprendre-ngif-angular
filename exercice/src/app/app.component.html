@@ -1,9 +1,29 @@
 <ng-container>
   <div class="row">
     <div class="col-12">
-        <ng-container *ngIf="nom">
-          <h1 style="display: none;">Bonjour et bienvenue {{nom}}</h1>
-        </ng-container>
+      <div class="container" *ngIf="10">
+   
+        .... this content will be visible because 10 is truthy ...
+       
+     </div>
+     
+     <div class="container" *ngIf="0">
+        
+        .... this content will be hidden because 0 is falsy ...
+       
+     </div>
+     
+     <div class="container" *ngIf="'hello world'">
+        
+        .... this content will be visible because the string 'hello world' is truthy ...
+       
+     </div>
+     
+     <div class="container" *ngIf="''">
+        
+        .... this content will be hidden because the empty string '' is falsy ...
+       
+     </div>
     </div>
   </div>
 </ng-container>
