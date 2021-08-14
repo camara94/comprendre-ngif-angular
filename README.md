@@ -76,3 +76,4 @@ La directive <code>ngIf</code> peut prendre en entrée n'importe quelle expressi
 Outre les booléens, nous pouvons également transmettre à ngIf par exemple des chaînes, des tableaux, des objets, etc. Voici quelques exemples de ce qui se passerait si nous passions d'autres types primitifs à <code>ngIf</code> :
 ![expression](images/expressions.png)
 Et voici d'autres exemples de transmission de tableaux et d'objets à ngIf :
+![con](images/ngcon.png)

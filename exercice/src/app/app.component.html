@@ -1,29 +1,18 @@
 <ng-container>
   <div class="row">
     <div class="col-12">
-      <div class="container" *ngIf="10">
-   
-        .... this content will be visible because 10 is truthy ...
-       
-     </div>
-     
-     <div class="container" *ngIf="0">
-        
-        .... this content will be hidden because 0 is falsy ...
-       
-     </div>
-     
-     <div class="container" *ngIf="'hello world'">
-        
-        .... this content will be visible because the string 'hello world' is truthy ...
-       
-     </div>
-     
-     <div class="container" *ngIf="''">
-        
-        .... this content will be hidden because the empty string '' is falsy ...
-       
-     </div>
+        <ng-container *ngIf="{nom: 'CAMARA'}">
+          .... this content will be visible because the expression is truthy ...
+        </ng-container><br/>
+        <ng-container *ngIf="{}">
+          .... this content will be visible because the expression is truthy ...
+        </ng-container> <br />
+        <ng-container *ngIf="[1,2,3]">
+          .... this content will be visible because the expression is truthy ...
+        </ng-container> <br/>
+        <ng-container *ngIf="[]">
+          .... this content will be visible because the expression is truthy ...
+        </ng-container>
     </div>
   </div>
 </ng-container>
