@@ -18,3 +18,7 @@ Dans cet article, nous aborderons les sujets suivants :
 * Le modèle Single Data Observable
 * Comment <code>ngIf</code> fonctionne-t-il sous le capot ?
 * Résumé
+
+Cet article est la traduction la série en cours sur les fonctionnalités d'Angular Core, vous pouvez trouver tous les articles disponibles [ici](https://blog.angular-university.io/tag/angular-core/).
+
+Alors sans plus tarder, commençons à apprendre tout ce que nous devons savoir sur Angular ngIf !
